@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Firstname Lastname",
+    
+    "image": "https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/example.org\/1\/01\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hugo tranquilpeak theme",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c"
+    }
+    
+  },
+  "description": "Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs Pytorch implementation of our paper Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs, which is accepted by CVPR2022. (arXiv)\nWe also won the 1st place of Video Relation Understanding (VRU) Grand Challenge in ACM Multimedia 2021, with a simplified version of our model.(The code for object tracklets generation is available at here)\nRequirements Python == 3.7 or later, Pytorch == 1.",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.108.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Firstname Lastname">
+<meta name="keywords" content="">
+<meta name="description" content="Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs Pytorch implementation of our paper Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs, which is accepted by CVPR2022. (arXiv)
+We also won the 1st place of Video Relation Understanding (VRU) Grand Challenge in ACM Multimedia 2021, with a simplified version of our model.(The code for object tracklets generation is available at here)
+Requirements Python == 3.7 or later, Pytorch == 1.">
+
+
+<meta property="og:description" content="Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs Pytorch implementation of our paper Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs, which is accepted by CVPR2022. (arXiv)
+We also won the 1st place of Video Relation Understanding (VRU) Grand Challenge in ACM Multimedia 2021, with a simplified version of our model.(The code for object tracklets generation is available at here)
+Requirements Python == 3.7 or later, Pytorch == 1.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hugo tranquilpeak theme">
+<meta name="twitter:title" content="Hugo tranquilpeak theme">
+<meta property="og:url" content="https://example.org/1/01/">
+<meta property="twitter:url" content="https://example.org/1/01/">
+<meta property="og:site_name" content="Hugo tranquilpeak theme">
+<meta property="og:description" content="Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs Pytorch implementation of our paper Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs, which is accepted by CVPR2022. (arXiv)
+We also won the 1st place of Video Relation Understanding (VRU) Grand Challenge in ACM Multimedia 2021, with a simplified version of our model.(The code for object tracklets generation is available at here)
+Requirements Python == 3.7 or later, Pytorch == 1.">
+<meta name="twitter:description" content="Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs Pytorch implementation of our paper Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs, which is accepted by CVPR2022. (arXiv)
+We also won the 1st place of Video Relation Understanding (VRU) Grand Challenge in ACM Multimedia 2021, with a simplified version of our model.(The code for object tracklets generation is available at here)
+Requirements Python == 3.7 or later, Pytorch == 1.">
+<meta property="og:locale" content="en-us">
+
+  
+  
+  
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+
+
+
+
+
+
+    <title>Hugo tranquilpeak theme</title>
+
+    <link rel="icon" href="https://example.org/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://example.org/1/01/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://example.org/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://example.org/" aria-label="Go to homepage">Hugo tranquilpeak theme</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://example.org/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://example.org/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Firstname Lastname</h4>
+        
+          <h5 class="sidebar-profile-bio">Super bio with markdown support <strong>COOL</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kakawait" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait" target="_blank" rel="noopener" title="Stack Overflow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-stack-overflow" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="0001-01-01T00:00:00Z">
+        
+  January 1, 1
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <h1 id="classification-then-grounding-reformulating-video-scene-graphs-as-temporal-bipartite-graphs">Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs</h1>
+<p>Pytorch implementation of our paper <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Gao_Classification-Then-Grounding_Reformulating_Video_Scene_Graphs_As_Temporal_Bipartite_Graphs_CVPR_2022_paper.html"><strong>Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs</strong></a>, which is accepted by CVPR2022. <a href="https://arxiv.org/abs/2112.04222">(arXiv)</a></p>
+<p><img src="pic/cvpr2022-6703.png" alt="cvpr2022-6703.png"></p>
+<p>We also won the 1st place of Video Relation Understanding (VRU) Grand Challenge in ACM Multimedia 2021, with a simplified version of our model.(The code for object tracklets generation is available at <a href="https://github.com/Dawn-LX/VidVRD-tracklets">here</a>)</p>
+<h1 id="requirements">Requirements</h1>
+<p>Python == 3.7 or later, Pytorch == 1.6 or later, for other basic packages, just run the project and download whatever needed.</p>
+<h1 id="datasets">Datasets</h1>
+<p>Download the <a href="https://xdshang.github.io/docs/imagenet-vidvrd.html">ImageNet-VidVRD</a> dataset and <a href="https://xdshang.github.io/docs/vidor.html">VidOR</a> dataset, and put them in the following folder as</p>
+<pre tabindex="0"><code>├── dataloaders
+│   ├── dataloader_vidvrd.py
+│   └── ...
+├── datasets
+│   ├── cache                       # cache file for our dataloaders
+│   ├── vidvrd-dataset
+│   │   ├── train
+│   │   ├── test
+│   │   └── videos
+│   ├── vidor-dataset
+│   │   ├── annotation
+│   │   └── videos
+│   └── GT_json_for_eval
+│       ├── VidORval_gts.json       # GT josn for evlauate
+│       └── VidVRDtest_gts.json
+├── tracking_results                # tracklets data &amp; features
+│   ├── ...
+│   ├── format_demo.py              
+│   └── readme.md   
+├── experiments   
+├── models
+├── ...
+</code></pre><h1 id="verify-tracklets-data--feature-preparation-by-running-dataloader_demo">Verify tracklets data &amp; feature preparation by running dataloader_demo</h1>
+<p>This section helps you download the tracklets data and place them correctly, as well as set the dataloader&rsquo;s config correctly. Successfully run the <code>tools/dataloader_demo.py</code> to verify all data &amp; configs are set correctly.</p>
+<p><strong>NOTE</strong> we use the term <code>proposal</code> in our code to represent tracklet proposals in video-level, which is totally different with the concept of &ldquo;proposal&rdquo; in &ldquo;proposal-based methods&rdquo; in our paper. In our paper, we use &ldquo;proposals to represent paired subject-object tracklet segments. In contrast, here the term <code>proposal</code> in our code represents long-term object tracklets in video-level (i.e., without sliding window or video segments).</p>
+<h2 id="tracklet-data-for-vidvrd">Tracklet data for VidVRD</h2>
+<ol>
+<li>
+<p>Download the tracklet with features at here:  <a href="https://mega.nz/folder/1QA31RaK#pEP60O-ENr-5k_9ByoJhag">train</a>, <a href="https://pan.zju.edu.cn/share/694f908a22fff11c037eb50876">test</a>. And put them in <code>tracking_results/</code>. Refer to <code>tracking_results/readme.md</code> for more details about the tracklet data.</p>
+</li>
+<li>
+<p>Download the tracklet with features used in <a href="https://pkumyd.github.io/paper/CVPR2020_VideoVRD.pdf">&ldquo;Beyond Short-Term Snippet: Video Relation Detection with Spatio-Temporal Global Context&rdquo;</a> at the author&rsquo;s personal page <a href="http://www.muyadong.com/publication.html">here</a>.</p>
+<p><strong>Some Notes</strong></p>
+<ul>
+<li>we use the term <code>pku</code> (i.e., Peking University) in our code to refer to their tracklets &amp; features)</li>
+<li>The original data released by them only have 999 <code>.npy</code> files (maybe they have updated the link now), missing data for video <code>ILSVRC2015_train_00884000</code>. So we trained our own Faster-RCNN (same training setting as the above paper), and extract the tracklet &amp; features. And the supplemental data can be find <a href="https://mega.nz/folder/FMhzFD4A#7R2c98TxgA7Av_b9-_ijYg">here</a>.</li>
+</ul>
+</li>
+<li>
+<p>The tracklet with features are in <code>VidVRD_test_every1frames</code> (ours), <code>VidVRD_train_every1frames</code> (ours), <code>preprocess_data/tracking/videovrd_detect_tracking</code> (PKU, both train &amp; test), in whcih each <code>.npy</code> file corresponds to a video and contains all the tracklets in that video. The I3D features of tracklets are in <code>preprocess_data/tracking/videovrd_i3d</code> (PKU, both train &amp; test).
+Put them under the dir of this project (or any other position if you use absolute path).</p>
+</li>
+<li>
+<p>modify the config file at <code>experiments/demo/config_.py</code>, where <code>proposal_dir</code> is the dir of tracklet with features, <code>i3d_dir</code> is the dir of tracklets&rsquo; I3D features, and <code>ann_dir</code> is <code>datasets/vidvrd-dataset</code>.</p>
+</li>
+<li>
+<p>Verify all data &amp; configs are set correctly. e.g., for PKU&rsquo;s tracklets with I3D features, run the following commands: (refer to <code>tools/dataloader_demo.py</code> for more details.):</p>
+<pre tabindex="0"><code>python tools/dataloader_demo.py \
+        --cfg_path experiments/demo/config_.py \
+        --split test \
+        --dataset_class pku_i3d
+</code></pre></li>
+</ol>
+<h2 id="tracklet-data-for-vidor">Tracklet data for VidOR</h2>
+<ul>
+<li>
+<p>Download the I3D feature of train &amp; val videos (used for grounding stage) at <a href="https://mega.nz/folder/FAxh0CiC#2zLOovjX8epdgMq5rXwEhg">here</a></p>
+</li>
+<li>
+<p>Download the pre-prepared cache data for VidOR-val (<a href="https://mega.nz/folder/VcwA1DaI#YW2M_uFsbsE6twHDIpfPuw">here</a>, around 19G), VidOR-train (<a href="https://mega.nz/folder/8IBzkKQS#6TXQWikT4HL5LoCnQrpsJA">here</a>, 14 parts in total, around 126G), and put them in <code>datasets/cache</code>. (these cached data includes classeme features)</p>
+</li>
+<li>
+<p><strong>Some Notes</strong></p>
+<p>Ideally, you can prepare these cache data from <code>.npy</code> files (as did in VidVRD). However, due to some ancient coding reasons, we extract bbox RoI feature for each frame, which makes these <code>.npy</code> files too large (<strong>827G</strong> for VidOR-train and <strong>90G</strong> for VidOR-val). Therefore, we only release pre-prepared cache data as above.</p>
+<p>Despite this, we still release the <code>.npy</code> files without RoI features, i.e., only box positions, (<a href="https://drive.google.com/drive/folders/1wWkzHlhYcZPQR4fUMTTJEn2SVVnhGFch?usp=sharing">here</a>, around 12G), and you can extract their RoI features based on the position by yourself. Refer to <code>tracking_results/readme.md</code> for more details about the tracklet data.</p>
+<p>Refer to this repository <a href="https://github.com/Dawn-LX/VidVRD-tracklets">VidVRD-tracklets</a> (last Section of README.md) for more details about extracting features based on the given bbox positions.</p>
+<p>As for classeme feature, For VidOR, we use the weighted average of category word embeddings, based on the classification probability vectors predicted by the detector. (&ldquo;soft&rdquo; classeme)  For VidVRD, we just use the  category word embeddings as classeme feature, i.e., &ldquo;hard&rdquo; classeme. refer to <code>tools_draft/extract_classeme.py</code> for more details.</p>
+</li>
+</ul>
+<h1 id="evaluation">Evaluation:</h1>
+<p><strong>First, make sure you run <code>tools/dataloader_demo.py</code> successfully</strong></p>
+<ol>
+<li>
+<p>first generate the GT json file for evaluation:</p>
+<p>for vidvrd:</p>
+<pre tabindex="0"><code>python VidVRD-helper/prepare_gts_for_eval.py \
+    --dataset_type vidvrd \
+    --save_path datasets/GT_json_for_eval/VidVRDtest_gts.json
+</code></pre><p>for vidor:</p>
+<pre tabindex="0"><code>python VidVRD-helper/prepare_gts_for_eval.py \
+    --dataset_type vidor \
+    --save_path datasets/GT_json_for_eval/VidORval_gts.json
+</code></pre></li>
+<li>
+<p>Download model weights for different exps <a href="https://drive.google.com/file/d/1vE-cQrNUrpSKrWC94orbbpVLkvuDKFwm/view?usp=sharing">here</a>, and put them in the <code>experiments/</code> dir. Download pre-prepared data <a href="https://mega.nz/folder/tY5HQQwK#9Mgw4usgxF5FEI4RZArfmw">here</a>, and put them in the <code>prepared_data/</code> dir.</p>
+</li>
+<li>
+<p>Refer to <code>experiments/readme.md</code> for the correspondence between the exp ids and the table ids in our paper.</p>
+</li>
+<li>
+<p>For <strong>VidVRD</strong>, run the following commands to evaluate different exps: (refer to <code>tools/eval_vidvrd.py</code> for more details)</p>
+<p>e.g., for exp1</p>
+<pre tabindex="0"><code>python tools/eval_vidvrd.py \
+    --cfg_path experiments/exp1/config_.py \
+    --ckpt_path experiments/exp1/model_epoch_80.pth \
+    --use_pku \
+    --cuda 1 \
+    --save_tag debug
+</code></pre></li>
+<li>
+<p>For <strong>VidOR</strong>, refer to <code>tools/eval_vidor.py</code> for more details.</p>
+<p>Run the following commands to evaluate BIG-C (i.e., only the classification stage):</p>
+<pre tabindex="0"><code>python tools/eval_vidor.py \
+    --eval_cls_only \
+    --cfg_path experiments/exp4/config_.py \
+    --ckpt_path experiments/exp4/model_epoch_60.pth \
+    --save_tag epoch60_debug \
+    --cuda 1
+</code></pre><p>Run the following commands to evaluate BIG based on the output of cls stage (you need run BIG-C first and save the <code>infer_results</code>).</p>
+<pre tabindex="0"><code>python tools/eval_vidor.py \
+    --cfg_path experiments/grounding_weights/config_.py \
+    --ckpt_path experiments/grounding_weights/model_epoch_70.pth \
+    --output_dir experiments/exp4_with_grounding \
+    --cls_stage_result_path experiments/exp4/VidORval_infer_results_topk3_epoch60_debug.pkl \
+    --save_tag with_grd_epoch70 \
+    --cuda 1
+</code></pre><p>Run the following commands to evaluate the fraction recall (refer to table-6 in our paper, you need run BIG first and save the <code>hit_infos</code>).</p>
+<pre tabindex="0"><code>python tools/eval_fraction_recall.py \
+    --cfg_path experiments/grounding_weights/config_.py \
+    --hit_info_path  experiments/exp5_with_grounding/VidORval_hit_infos_aft_grd_with_grd_epoch70.pkl
+</code></pre></li>
+</ol>
+<p><strong>NOTE</strong></p>
+<ul>
+<li>We also provide another evaluation scripts (i.e., <code>tools/eval_vidvrd_our_gt.py</code> and <code>tools/eval_vidor_our_gt.py</code>). The main difference lies in the process of constructing GT tracklets (i.e., from frame-level bbox annotations to video-level tracklets GTs). Compared to VidVRD-helper&rsquo;s GTs, here we perform linear interpolation for fragmented GT tracklets. Consequently the evaluation results have slight differences.</li>
+<li>Nevertheless, the results reported in our paper are evaluated with VidVRD-helper&rsquo;s GTs (i.e., <code>tools/eval_vidvrd.py</code> and <code>tools/eval_vidor.py</code>) to ensure fair comparisons.</li>
+<li>In our paper, all scores are truncated to 4 decimal places (not rounded)</li>
+</ul>
+<h1 id="training">Training</h1>
+<ol>
+<li>
+<p>For <strong>VidVRD</strong>, run the following commands to train for different exps: (refer to <code>tools/train_vidvrd.py</code> for more details)</p>
+<p>e.g., for exp1</p>
+<pre tabindex="0"><code>CUDA_VISIBLE_DEVICES=0,1 python tools/train_vidvrd.py \
+    --cfg_path experiments/exp1/config_.py \
+    --use_pku \
+    --save_tag retrain
+</code></pre></li>
+<li>
+<p>For <strong>VidOR</strong>, refer to <code>tools/train_vidor.py.py</code> for more details</p>
+<p>Run the following commands to train BIG-C (i.e., only the classification stage). e.g., for exp4</p>
+<pre tabindex="0"><code>CUDA_VISIBLE_DEVICES=0,1 python tools/train_vidor.py \
+    --cfg_path experiments/exp4/config_.py \
+    --save_tag retrain
+</code></pre><p>Note that we pre-assign all the labels for Base-C (exp6) since it does not require bipartite matching between predicate and GTs. The label assignment takes around <strong>1.5 hours</strong>.</p>
+<p>Run the following commands to train the grounding stage:</p>
+<pre tabindex="0"><code>CUDA_VISIBLE_DEVICES=2,3 python tools/train_vidor.py \
+    --train_grounding \
+    --cfg_path experiments/grounding_weights/config_.py \
+    --save_tag retrain
+</code></pre></li>
+</ol>
+<h1 id="data-release-summarize">Data Release Summarize</h1>
+<ul>
+<li>model weights for all exps (google drive, <a href="https://drive.google.com/file/d/1vE-cQrNUrpSKrWC94orbbpVLkvuDKFwm/view?usp=sharing">here</a>)</li>
+<li>pre-prepared data (statical prior &amp; category text Glove embddings) (<em>dcd</em> MEGA cloud, <a href="https://mega.nz/folder/tY5HQQwK#9Mgw4usgxF5FEI4RZArfmw">here</a>)</li>
+<li>I3D feature of VidOR train &amp; val around 3.3G (<em>dcd</em> MEGA cloud, <a href="https://mega.nz/folder/FAxh0CiC#2zLOovjX8epdgMq5rXwEhg">here</a>)</li>
+<li>VidOR traj <code>.npy</code> files (OnlyPos) (this has been released, around 12G)  <a href="https://drive.google.com/drive/folders/1wWkzHlhYcZPQR4fUMTTJEn2SVVnhGFch?usp=sharing">here</a> (<em>gkf</em> google drive).refer to this repository: <a href="https://github.com/Dawn-LX/VidVRD-tracklets">VidVRD-tracklets</a></li>
+<li>VidVRD traj <code>.npy</code> files (with feature) around 20G
+<ul>
+<li>VidVRD-test , <em>gkf</em> zju cloud, <a href="https://pan.zju.edu.cn/share/694f908a22fff11c037eb50876">here</a> (3.87G) (deprecated)</li>
+<li>VidVRD-test,  MEGA cloud, <a href="https://mega.nz/file/wJhiwbbB#AR-YuKrS_uNEfypk9T1g-mb4GZFe7wEwIrmd7xtnRos">here</a> (1.42G) (same file as that in zju cloud, but is zipped).</li>
+<li>VidVRD-train  <em>dcd</em> MEGA cloud <a href="https://mega.nz/folder/1QA31RaK#pEP60O-ENr-5k_9ByoJhag">here</a> (13G)</li>
+</ul>
+</li>
+<li>cache file for train &amp; val (for vidor)
+<ul>
+<li>v9 for val (around 19G) (<em>dcd</em> MEGA cloud <a href="https://mega.nz/folder/VcwA1DaI#YW2M_uFsbsE6twHDIpfPuw">here</a>)</li>
+<li>v7 for train (14 parts, around 126G in total <a href="https://mega.nz/folder/8IBzkKQS#6TXQWikT4HL5LoCnQrpsJA">here</a>)</li>
+</ul>
+</li>
+</ul>
+<p><strong>[Update]:</strong> Because the link of pku data provided by pku&rsquo;s author isn&rsquo;t available anymore. We upload their data into our MEGA cloud: <a href="https://mega.nz/file/UAgnXbjC#YqrlUe2rNl7qEEcr_NbxNk0qPX-Y5O2BZWVhHgqCK9g">here</a> (6.21G)</p>
+<p>(<em>dcd</em> is just the name of MEGA cloud account of our Lab :) )</p>
+<h1 id="citation">Citation</h1>
+<p>If our work is helpful for your research, please cite our publication:</p>
+<pre tabindex="0"><code>@inproceedings{gao2021classification,
+  title={Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs},
+  author={Gao, Kaifeng and Chen, Long and Niu, Yulei and Shao, Jian and Xiao, Jun},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  year={2022}
+}
+</code></pre><h1 id="others">Others</h1>
+<p>I have been working on this project for more than one year. So when learning and using pytorch, I wrote a lot of APIs (<code>utils/utils_func.py</code>), in which some of them might be interesting and useful, e.g., <code>unique_with_idx_nd</code>. So I opened a new repo to collect them, <a href="https://github.com/Dawn-LX/Interesting-Python-APIs">here</a></p>
+
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2018/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-tooltip="我的第一篇博客" aria-label="NEXT: 我的第一篇博客">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://example.org/1/01/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://example.org/1/01/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://example.org/1/01/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/example.org\/1\/01\/';
+        
+          this.page.identifier = '\/1\/01\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 Firstname Lastname. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2018/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-tooltip="我的第一篇博客" aria-label="NEXT: 我的第一篇博客">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://example.org/1/01/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://example.org/1/01/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://example.org/1/01/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexample.org%2F1%2F01%2F" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fexample.org%2F1%2F01%2F" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fexample.org%2F1%2F01%2F" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>Share on Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Firstname Lastname</h4>
+    
+      <div id="about-card-bio">Super bio with markdown support <strong>COOL</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Your job title
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        France
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://example.org/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://example.org/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

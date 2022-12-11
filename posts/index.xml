@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hugo tranquilpeak theme</title>
+    <link>https://example.org/posts/</link>
+    <description>Recent content in Posts on Hugo tranquilpeak theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的第一篇博客</title>
+      <link>https://example.org/2018/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/2018/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+      <description>这里是Markdown 正文 这里是Markdown 正文 PS D:\blog\myblog&amp;gt; hugo server Start building sites … hugo v0.108.0-a0d64a46e36dd2f503bfd5ba1a5807b900df231d windows/amd64 BuildDate=2022-12-06T13:37:56Z VendorInfo=gohugoio
+| EN-US &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;ndash; Pages | 16
+Paginator pages | 0
+Processed images | 0 Aliases | 4 Sitemaps | 1 Cleaned | 0
+Built in 99 ms Watching for changes in D:\blog\myblog{archetypes,assets,content,data,layouts,static,themes} Watching for config changes in D:\blog\myblog\config.toml Environment: &amp;ldquo;development&amp;rdquo; Serving pages from memory Running in Fast Render Mode. For full rebuilds on change: hugo server &amp;ndash;disableFastRender Web Server is available at http://localhost:1313/ (bind address 127.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/1/01/</guid>
+      <description>Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs Pytorch implementation of our paper Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs, which is accepted by CVPR2022. (arXiv)
+We also won the 1st place of Video Relation Understanding (VRU) Grand Challenge in ACM Multimedia 2021, with a simplified version of our model.(The code for object tracklets generation is available at here)
+Requirements Python == 3.7 or later, Pytorch == 1.</description>
+    </item>
+    
+  </channel>
+</rss>
