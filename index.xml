@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kaifeng Gao @ ZJU</title>
-    <link>https://example.com/</link>
+    <link>https://dawn-lx.github.io/</link>
     <description>Recent content on Kaifeng Gao @ ZJU</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, Jane Doe.</copyright>
-    <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dawn-lx.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>_简介_</title>
-      <link>https://example.com/_%E7%AE%80%E4%BB%8B_/</link>
+      <link>https://dawn-lx.github.io/_%E7%AE%80%E4%BB%8B_/</link>
       <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/_%E7%AE%80%E4%BB%8B_/</guid>
+      <guid>https://dawn-lx.github.io/_%E7%AE%80%E4%BB%8B_/</guid>
       <description>这些博客，主要写一下我读过的一些书，或者看过的一些电影和电视剧之后，产生的一些想法和随笔。
 然后有时候也偶尔记录一下一些游记
 本来想把以前在CSDN上些的技术博客也搬过来一些的，但是从现在的角度看，以前写的东西实在太蹩脚了，看不下去。可能需要进一步整理一下，然后再放上来。</description>
@@ -21,10 +21,10 @@
     
     <item>
       <title>有关《一件很小很美的事》的随笔</title>
-      <link>https://example.com/%E6%9C%89%E5%85%B3%E4%B8%80%E4%BB%B6%E5%BE%88%E5%B0%8F%E5%BE%88%E7%BE%8E%E7%9A%84%E4%BA%8B%E7%9A%84%E9%9A%8F%E7%AC%94/</link>
+      <link>https://dawn-lx.github.io/%E6%9C%89%E5%85%B3%E4%B8%80%E4%BB%B6%E5%BE%88%E5%B0%8F%E5%BE%88%E7%BE%8E%E7%9A%84%E4%BA%8B%E7%9A%84%E9%9A%8F%E7%AC%94/</link>
       <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/%E6%9C%89%E5%85%B3%E4%B8%80%E4%BB%B6%E5%BE%88%E5%B0%8F%E5%BE%88%E7%BE%8E%E7%9A%84%E4%BA%8B%E7%9A%84%E9%9A%8F%E7%AC%94/</guid>
+      <guid>https://dawn-lx.github.io/%E6%9C%89%E5%85%B3%E4%B8%80%E4%BB%B6%E5%BE%88%E5%B0%8F%E5%BE%88%E7%BE%8E%E7%9A%84%E4%BA%8B%E7%9A%84%E9%9A%8F%E7%AC%94/</guid>
       <description>有关《一件很小很美的事》的随笔 《瑞克和莫蒂》(R&amp;amp;M)的核心就是“虚无主义”。一切都是虚无，不断的解构种种人们认为有意义的事情：爱情、婚姻、英雄主义、名利，解构一切。不断的解构（甚至是讽刺）你认为有意义的事情。
 比如超级英雄，一个例子是S3E4，这集讲的是莫蒂加入了一个超级英雄组织，但是姥爷根本不care，他直接把超级英雄们要对抗的大Boss一个人搞定了，让后和超级英雄们玩电锯惊魂。这中间当然也刻画了很多超级英雄团队表面光鲜亮丽但是背后肮脏的事情。正义于邪恶都是人为定义的，毫无意义。直接把漫威的复仇者联盟嘲讽了一遍。同时，我也是因为这个，一直懒得去看《黑袍纠察队》，感觉不过如此，也就是讲讲超级英雄背后的肮脏阴暗的一面，这么点破事，R&amp;amp;M十几分钟就解构完了。
 另一个例子是S4E3，这一集解构的是层层反转的谍战电影，比如《碟中谍》、《谍影重重》系列。这集讲的是莫蒂想从自己与姥爷的冒险中取材，写一部盗窃犯罪片投稿到Netflix。然后瑞克不想莫蒂沉迷编剧，于是自己设计了一个大局：将计就计，带他去盗墓冒险，然后遇到了一个星际大盗。瑞克组建了一个团队，与这个星际大盗产生了很多层层反转（叛变）的对抗。诸如“你的叛变是我计划中的一部分”、“你计划中的我的叛变是我的计划中的一部分”&amp;hellip;&amp;hellip; 但事实上，这些层层反转都是瑞克设计好的：瑞克制造了两个机器人，一个擅长计划且能计算别人的计划的Heistotron，一个擅长随机行事以避免被别人计算计划的Randotron。但这只是第一层，瑞克在第N层，最终的大反派是叛变了的Randotron。最后机器人与瑞克开始争论到底是谁控制了谁，诸如“是我给你的脑子里写入程序让你相信xxx”、“不，是我给你的脑子里写入了程序让你相信你给我的脑子里写入了程序xxx&amp;quot;, N次套娃之后，最终Rick赢了，机器人自爆。本集的最后，瑞克送莫蒂去Netflix总部推销电影剧本，莫蒂在讲剧情的时候突然觉得自己写的东西无聊透顶，于是放弃编剧梦想，重新回到姥爷身边。
@@ -41,19 +41,19 @@
     
     <item>
       <title>Photos</title>
-      <link>https://example.com/photos/</link>
+      <link>https://dawn-lx.github.io/photos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/photos/</guid>
+      <guid>https://dawn-lx.github.io/photos/</guid>
       <description>My Photos </description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>https://example.com/publications/</link>
+      <link>https://dawn-lx.github.io/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/publications/</guid>
+      <guid>https://dawn-lx.github.io/publications/</guid>
       <description>Publications Kaifeng Gao, Long Chen, Yulei Niu, Jian Shao, and Jun Xiao. Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs, In Proceedings of the IEEE conference on Computer Vision and Pattern Recognition (CVPR), 2022. [Paper][Code]
 Shaoning Xiao, Long Chen, Kaifeng Gao, Zhao Wang, Yi Yang, Jun Xiao. Rethinking Multi-Modal Alignment in Video Question Answering from Feature and Sample Perspectives. In The 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2022.</description>
     </item>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>游记 on Kaifeng Gao @ ZJU</title>
-    <link>https://example.com/categories/%E6%B8%B8%E8%AE%B0/</link>
+    <link>https://dawn-lx.github.io/categories/%E6%B8%B8%E8%AE%B0/</link>
     <description>Recent content in 游记 on Kaifeng Gao @ ZJU</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, Jane Doe.</copyright>
-    <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/%E6%B8%B8%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dawn-lx.github.io/categories/%E6%B8%B8%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>_简介_</title>
-      <link>https://example.com/_%E7%AE%80%E4%BB%8B_/</link>
+      <link>https://dawn-lx.github.io/_%E7%AE%80%E4%BB%8B_/</link>
       <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/_%E7%AE%80%E4%BB%8B_/</guid>
+      <guid>https://dawn-lx.github.io/_%E7%AE%80%E4%BB%8B_/</guid>
       <description>这些博客，主要写一下我读过的一些书，或者看过的一些电影和电视剧之后，产生的一些想法和随笔。
 然后有时候也偶尔记录一下一些游记
 本来想把以前在CSDN上些的技术博客也搬过来一些的，但是从现在的角度看，以前写的东西实在太蹩脚了，看不下去。可能需要进一步整理一下，然后再放上来。</description>
