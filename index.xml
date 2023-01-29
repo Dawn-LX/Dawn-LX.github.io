@@ -15,7 +15,8 @@
       
       <guid>https://dawn-lx.github.io/%E4%B9%A6%E6%9E%B6/</guid>
       <description>书架 ───单纯记录一下读过的书。我的豆瓣主页
-在读 鲁迅：呐喊 彷徨 故事新编 已读 2022
+在读 [捷克] 赫拉巴尔：婚宴 温铁军 等：全球化与国家竞争：新兴七国比较研究 已读 2023
+刘震云：故乡天下黄花 写的不错，但是总看这种题材，好像有点厌倦了。估计白鹿原也差不多就是这些事情。这让我有点不想看白鹿原了。 余华：第七天 鲁迅：呐喊 彷徨 故事新编 余华：我只知道人是什么 写父亲的部分很好，但是整本书都参杂着微博热点舆论事件，就像一锅好汤点缀了几颗老鼠屎 2022
 [英] 乔治·奥威尔：动物农场 [日] 东野圭吾：恶意 老舍：离婚 《离婚》写的是小官僚阶级，《骆驼祥子》写的是底层车夫：两者的故事发生在同一时期，《离婚》中的老李也雇过车夫。我想，如果有人把二者合起来拍一部电影，一定很有趣。 老舍：骆驼祥子 骆以军：故事便利店 陈忠实：蓝袍先生 陈忠实先生说正是这本书的写作引发了《白鹿原》的创作欲念。 [日] 东野圭吾：嫌疑人X的献身 [哥伦比亚] 加西亚·马尔克斯：百年孤独 读了一半，读不下去了，可能我的水平还不够读这样的名著。 艾思奇：大众哲学 宋平同志说这是他的启蒙书，所以我好奇地读了一下，读了一大半，没读完。 往事｜百岁宋平《中国新闻周刊》 刘和平：大明王朝1566 刘震云：我叫刘跃进 刘震云：一地鸡毛 非常写实，令人不寒而栗。 谁也不是没有事业心，大家都奋斗过，发愤过，挑灯夜读过，有过一番宏伟的理想，单位的处长局长，社会上的大大小小机关，都不在眼里，哪里会想到几年之后，他们也跟大家一样，很快淹没到黑压压的千篇一律千人一面的人群之中呢？你也无非是买豆腐、上班下班、吃饭睡觉洗衣服、对付保姆弄孩子，到了晚上你一页书也不想翻，什么宏图大志，什么事业理想，狗屁，那是年轻时候的事，大家都这么混，不也活了一辈子？有宏图大志怎么了？有事业理想怎么了？“古今将相在何方，荒冢一堆草没了”一辈子下来谁还知道谁！
 刘震云：温故一九四二 本书讲的是1942年河南饥荒。 余华：文城 刘震云：一句顶一万句 这本书非常经典。刘震云能由一件事扯出一万件事。 但在后面提到前文的某件事或者某个人时，他总能给你先回顾一下这个人或这件事。 因此看他的书，有一种非常踏实的听故事的感觉。 刘震云：一日三秋 我在图书馆乱逛的时候发现的这本书。 我从这本书了解到了刘震云这位作家，很喜欢他的书，以及他的文风。 [美] 丹尼尔·埃弗里特：别睡，这里有蛇 一个语言学家在亚马孙丛林深处，探索原始部落（皮拉罕人）的语言和文化的故事。 皮拉哈人互道晚安时会说：“别睡，这里有蛇！” 田丰：岂不怀归：三和青年调查 我在三和大神吧（百度贴吧）逛了好多年。看了这本书深有感触。 “三和大神”是生活于中国广东省深圳市龙华区景乐新村附近的一群居无定所、以极低成本生活的打工者的统称。“三和”一词源自该区域最大的人力资源公司名称。 Steam上有个游戏叫《大多数》，以此为原型（但是风评很差🤣）。 刘慈欣：流浪地球：短篇小说精选 余华：黄昏里的男孩 : 收录了十二个中短篇小说。 这是我所有中短篇小说中与现实最为接近的作品，可能是令人亲切的，不过也是充人不安的。我想这是现实生活给予我们最基本的感受，亲切同时又让人不安。
 余华：在细雨中呼喊 这本书我看了两遍。 2021
@@ -67,8 +68,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dawn-lx.github.io/publications/</guid>
-      <description>Publications Kaifeng Gao, Long Chen, Yulei Niu, Jian Shao, and Jun Xiao. Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs, In Proceedings of the IEEE conference on Computer Vision and Pattern Recognition (CVPR), 2022. [Paper][Code]
-Shaoning Xiao, Long Chen, Kaifeng Gao, Zhao Wang, Yi Yang, Jun Xiao. Rethinking Multi-Modal Alignment in Video Question Answering from Feature and Sample Perspectives. In The 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2022.</description>
+      <description>Publications Kaifeng Gao, Long Chen, Hanwang Zhang, Jun Xiao, Qianru Sun. Compositional Prompt Tuning with Motion Cues for Open-vocabulary Video Relation Detection. In International Conference on Learning Representations (ICLR), 2023. [Paper][Code]
+Kaifeng Gao, Long Chen, Yulei Niu, Jian Shao, and Jun Xiao. Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs, In Proceedings of the IEEE conference on Computer Vision and Pattern Recognition (CVPR), 2022. [Paper][Code]
+Shaoning Xiao, Long Chen, Kaifeng Gao, Zhao Wang, Yi Yang, Jun Xiao.</description>
     </item>
     
   </channel>
