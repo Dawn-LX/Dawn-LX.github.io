@@ -100,9 +100,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dawn-lx.github.io/publications/</guid>
-      <description>Publications Kaifeng Gao, Long Chen, Hanwang Zhang, Jun Xiao, Qianru Sun. Compositional Prompt Tuning with Motion Cues for Open-vocabulary Video Relation Detection. In International Conference on Learning Representations (ICLR), 2023. [Paper][Code]
-Kaifeng Gao, Long Chen, Yulei Niu, Jian Shao, and Jun Xiao. Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs, In Proceedings of the IEEE conference on Computer Vision and Pattern Recognition (CVPR), 2022. [Paper][Code]
-Shaoning Xiao, Long Chen, Kaifeng Gao, Zhao Wang, Yi Yang, Jun Xiao.</description>
+      <description>Publications Wenqing Wang, Kaifeng Gao, Yawei Luo, Tao Jiang, Fei Gao, Jian Shao, Jianwen Sun, Jun Xiao. Triple Correlations-Guided Label Supplementation for Unbiased Video Scene Graph Generation. In Proceedings of the 31st ACM International Conference on Multimedia (ACM MM), 2023. [Paper &amp;amp; Code coming soon]
+Kaifeng Gao, Long Chen, Hanwang Zhang, Jun Xiao, Qianru Sun. Compositional Prompt Tuning with Motion Cues for Open-vocabulary Video Relation Detection. In International Conference on Learning Representations (ICLR), 2023.</description>
     </item>
     
   </channel>
